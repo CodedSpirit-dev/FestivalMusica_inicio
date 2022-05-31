@@ -1,2 +1,1 @@
-@use  '/src/scss/base/';
-@use  '/src/scss/contenido/contenido';
+@forward './contenido/contenido';
