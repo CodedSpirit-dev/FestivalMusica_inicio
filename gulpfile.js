@@ -1,7 +1,22 @@
-function tarea(callback) {
-    console.log('mi primer tarea')
+const {src, dest, watch} = require("gulp")
+const sass = require('gulp-sass')(require('sass'))
 
-    callback();
+function css(done) {
+    //Identificar el archivo de SASS
+    //Compilarlo
+    //Almacenarlo
+    src('src/scss/app.scss').pipe( sass() ).
+    pipe( dest('build/css'));
+
+    done();
 }
 
-exports.tarea = tarea;
+function dev(done) {
+    watch('src/scss/app.scss', css)
+
+    done();
+}
+
+exports.css = css;
+
+exports.dev = dev;
