@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use './variables' as v;
 
 // @mixin heading($color:blue, $border-radius: false) {
 //     text-transform: uppercase;
@@ -12,24 +12,25 @@
 // }
 
 @mixin phone {
-    @media (min-width: v.$tablet) {
+    @media (min-width: 375px) {
         @content;
     }
 }
+
 @mixin tablet {
-    @media (min-width: v.$tablet) {
+    @media (min-width: 768px) {
         @content;
     }
 }
+
 @mixin desktop {
     @media (min-width: v.$desktop) {
         @content;
     }
 }
+
 @mixin desktop {
     @media (min-width: v.$desktopXL) {
         @content;
     }
 }
-
-
