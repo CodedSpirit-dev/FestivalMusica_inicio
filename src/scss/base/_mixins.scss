@@ -12,7 +12,7 @@
 // }
 
 @mixin phone {
-    @media (min-width: 375px) {
+    @media (min-width: v.$phone) {
         @content;
     }
 }

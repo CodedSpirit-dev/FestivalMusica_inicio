@@ -12,7 +12,7 @@
     }
     .dia {
         text-transform: uppercase;
-        margin-bottom: 5rem;
+        margin: 5rem 0;
     }
 
 }
@@ -63,9 +63,12 @@
 .bg-amarillo {
     background-color: v.$amarillo;
     li:nth-child(odd) {
-        background-color: darken(v.$amarillo, 8%);
+        background-color: darken(v.$amarillo, 12%);
     }
 }
 .bg-verde {
     background-color: v.$verde;
+    li:nth-child(odd) {
+        background-color: darken(v.$verde, 8%);
+    }
 }
