@@ -29,7 +29,7 @@
     }
 }
 
-@mixin desktopXL {
+@mixin desktop {
     @media (min-width: v.$desktopXL) {
         @content;
     }

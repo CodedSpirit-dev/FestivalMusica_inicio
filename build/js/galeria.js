@@ -4,17 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function iniciarApp() {
     crearGaleria();
-    scrollNav();
 
-}
-
-function scrollNav() {
-    const enlaces = document.querySelectorAll('.navegacion-principal a');
-    enlaces.forEach( enlace => {
-        enlace.addEventListener('click', function(e) {
-            console.log(e.target.attr);
-        })
-    })
 }
 
 function crearGaleria() {
