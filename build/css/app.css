@@ -609,10 +609,6 @@ img {
   background-color: #009e6a;
 }
 
-.bg-verde1 {
-  background-color: rgb(0, 199, 133);
-}
-
 .galeria {
   padding: 5rem 0;
 }
@@ -642,7 +638,7 @@ img {
     gap: 2rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .galeria-imagenes {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -679,73 +675,4 @@ img {
 }
 .btn-cerrar:hover {
   cursor: pointer;
-}
-
-.boletos {
-  padding: 5 rem 0;
-}
-.boletos h3 {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 2rem;
-}
-@media (min-width: 768px) {
-  .boletos .contenedor-boletos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-  }
-}
-
-.pase .nombre-pase {
-  text-align: center;
-  font-size: 2.4rem;
-  color: #fff;
-}
-.pase-header, .pase-footer {
-  padding: 0.5rem;
-}
-.pase-header p, .pase-footer p {
-  text-align: center;
-  color: #fff;
-  margin: 0;
-}
-.pase-header {
-  background-color: rgb(255, 0, 128);
-}
-.pase-header p {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-.pase-body {
-  color: black;
-}
-.pase-body ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.pase-body ul li,
-.pase-body ul :nth-child(odd) {
-  background-color: #fff;
-  padding: 1rem;
-  border-bottom: 1px solid #adadad;
-}
-.pase-footer {
-  background-color: #752f97;
-}
-.pase-footer p {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-
-.site-footer {
-  background-color: rgb(255, 0, 128);
-  padding: 1rem;
-}
-.site-footer p {
-  margin: 0;
-  text-align: center;
-  color: #fff;
 }
