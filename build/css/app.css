@@ -372,7 +372,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 5rem 0 5rem 0;
 }
 
