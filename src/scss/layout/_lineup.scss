@@ -1,5 +1,5 @@
 @use 'base/variables' as v;
-@use '../base/mixins' as m;
+@use 'base/mixins' as m;
 
 .lineup {
     background-color: v.$rosa;
@@ -8,44 +8,42 @@
     h3, p {
         text-align: center;
         color: v.$blanco;
-    
     }
     .dia {
         text-transform: uppercase;
         margin: 5rem 0;
     }
-
 }
 
 .escenarios-contenedor {
-    @include m.phone {
-        @include m.grid (2, 5rem);
+    @include m.tablet {
+        @include m.grid(2, 5rem);
     }
+
     p {
         color: v.$negro;
     }
-    .escenario {
-        padding-top: 2rem;
+}
 
-        p {
-            &:after {
-                content: '';
-                display: block;
-                width: 20rem;
-                height: 10rem;
-                background-size: 15rem;
-                background-repeat: no-repeat;
-                background-position: center;
-                margin: 2rem auto 0 auto;
-            }
+.escenario {
+    padding-top: 2rem;
+    .nombre-escenario {
+        &:after {
+            content: '';
+            display: block;
+            width: 20rem;
+            height: 10rem;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 2rem auto 0 auto;
         }
     }
 }
-.edm .nombre-escenario:after{
+.edm .nombre-escenario:after {
     background-image: url(../img/icono_edm.png);
 }
-
-.rock .nombre-escenario:after{
+.rock .nombre-escenario:after {
     background-image: url(../img/icono_rock.png);
 }
 
@@ -63,12 +61,12 @@
 .bg-amarillo {
     background-color: v.$amarillo;
     li:nth-child(odd) {
-        background-color: darken(v.$amarillo, 12%);
+        background-color: darken(v.$amarillo, 15%);
     }
 }
 .bg-verde {
     background-color: v.$verde;
     li:nth-child(odd) {
-        background-color: darken(v.$verde, 8%);
+        background-color: darken(v.$verde, 10%);
     }
 }
